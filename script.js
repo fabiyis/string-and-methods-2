@@ -2,11 +2,9 @@
 function countCharacters(inputString) {
     const counts = { a: 0, b: 0, d: 0, y: 0 };
     for (const char of inputString) {
-        if (char in counts) {
-            counts[char]++;
-        }
+        if (char in counts) {counts[char]++;}       
     }
-    return counts;
+    return counts; 
 }
 
 const inputString = "abdsgyhidsaadgbdaasbvcydsaabdgsaayre";
