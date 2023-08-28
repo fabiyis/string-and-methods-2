@@ -24,11 +24,8 @@ const nonEdibleItems = [];
 
 for (const item of items) {
     const trimmedItem = item.trim();
-    if (["rice", "yam", "beans", "cocoyam", "banana", "semo", "milk"].includes(trimmedItem)) {
-        edibleItems.push(trimmedItem);
-    } else {
-        nonEdibleItems.push(trimmedItem);
-    }
+    if (["rice", "yam", "beans", "cocoyam", "banana", "semo", "milk"].includes(trimmedItem))
+       { edibleItems.push(trimmedItem);} else { nonEdibleItems.push(trimmedItem);}
 }
 
 const edibleItemsString = edibleItems.join(', ');
